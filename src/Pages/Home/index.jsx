@@ -1,7 +1,8 @@
 import React from "react";
 import Typography from "../../Components/Typograph";
 import { colors } from "../../utils/colors";
-
+import { projects } from "../../../data.js";
+import ProjectCard from "../../Components/projectCard/index.jsx";
 // Importação correta dos ícones
 import htmlIcon from "../../assets/htmlIcon.svg";
 import cssIcon from "../../assets/cssIcon.svg";
@@ -67,6 +68,22 @@ function Home() {
               />
             </div>
           ))}
+        </div>
+      </section>
+      <section className="">
+        <div className="container mx-auto px-6">
+          <Typography variant="h2" color={colors.brandTertirary}>
+            Projetos
+          </Typography>
+          <Typography variant="p" color={colors.brandText}>
+            Alguns dos meus projetos:
+          </Typography>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project) => (
+              <ProjectCard key={project.projectId} project={project} />
+            ))}
+          </div>
         </div>
       </section>
     </main>
