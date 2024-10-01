@@ -13,6 +13,7 @@ import framerIcon from "../../assets/framerIcon.png";
 import ffIcon from "../../assets/ffIcon.png";
 import wpIcon from "../../assets/wpIcon.png";
 import webFlowIcon from "../../assets/webFlowIcon.png";
+import ContactForm from "../../Components/Forms/index.jsx";
 
 function Home() {
   const techStackIcons = [
@@ -85,6 +86,7 @@ function Home() {
             ))}
           </div>
         </div>
+        <ContactForm />
       </section>
     </main>
   );
