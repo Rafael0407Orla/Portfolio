@@ -29,7 +29,7 @@ function Home() {
   ];
 
   return (
-    <main className="container m-auto px-4 py-8 gap-8 md:px-5 md:py-11 md:gap-12">
+    <main className="container mx-auto gap-10 lg:gap-20 py-custom-v px-custom-h md:py-custom-v-md md:px-custom-h-md lg:py-custom-v-lg lg:px-custom-h-lg flex flex-col">
       <section className="flex flex-col-reverse md:flex-row items-center gap-6 justify-evenly">
         <div className="text-center md:text-left md:max-w-[50%]">
           <Typography variant="h1" color={colors.brandTertirary}>
@@ -49,7 +49,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="py-12 px-4">
+      <section className="">
         <div className="text-center mb-8">
           <Typography variant="h2" color={colors.brandTertirary}>
             My Tech Stack
@@ -72,7 +72,7 @@ function Home() {
         </div>
       </section>
       <section className="">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto">
           <Typography variant="h2" color={colors.brandTertirary}>
             Projetos
           </Typography>
@@ -80,14 +80,14 @@ function Home() {
             Alguns dos meus projetos:
           </Typography>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex flex-wrap justify-center align-middle gap-8">
             {projects.map((project) => (
-              <ProjectCard key={project.projectId}  project={project} />
+              <ProjectCard key={project.projectId} project={project} />
             ))}
           </div>
         </div>
-        <ContactForm />
       </section>
+      <ContactForm />
     </main>
   );
 }

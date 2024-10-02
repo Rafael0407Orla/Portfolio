@@ -22,9 +22,9 @@ const ProjectDetailPage = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container  mx-auto px-4 gap-4 py-8">
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-[60px]">
-        <div className="flex text-left flex-col w-full lg:w-[50%] xl:w-2/3 gap-6">
+        <div className="flex my-auto text-left flex-col w-full lg:w-[50%] xl:w-2/3 gap-6">
           <Typography variant="h1" color={colors.brandTertirary} align="left">
             {`Sobre o projeto ${project.name}!`}
           </Typography>
@@ -39,7 +39,7 @@ const ProjectDetailPage = () => {
           </Typography>
           <div className="flex flex-col gap-4">
             <Typography variant="h4" color={colors.brandTertirary} align="left">
-              Status of the project:
+              Status do projeto:
             </Typography>
             <StatusChip status={project.status} />
           </div>
@@ -49,12 +49,12 @@ const ProjectDetailPage = () => {
           <img
             src={project.image}
             alt={project.name}
-            className="w-full h-auto rounded-md shadow-lg"
+            className="w-full h-auto object-cover  rounded-md shadow-lg max-h-[500px]"
           />
         </div>
       </div>
 
-      <div className="my-12">
+      <div className="my-12 md:my-[80px]">
         <Typography variant="h2" color={colors.brandTertirary}>
           Tecnologias usadas:
         </Typography>

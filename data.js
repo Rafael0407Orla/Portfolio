@@ -1,5 +1,7 @@
 import capa from "../Portfolio/src/assets/htmlIcon.svg";
 import imagem from "../Portfolio/src/assets/cssIcon.svg";
+import vamooTela from "../Portfolio/src/assets/vamooImage.png";
+import tooleImage from "../Portfolio/src/assets/tooleImage.png";
 import ff from "../Portfolio/src/assets/flutterflowIcon.png";
 export const projects = [
   {
@@ -9,7 +11,7 @@ export const projects = [
     shortDescription:
       "O vamoo é um app para jogadores de tênis conseguirem criar e gerenciar seus torneio de maineira rápida e prática",
     capa: capa,
-    image: imagem,
+    image: vamooTela,
     techUsadas: [
       ff,
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
@@ -25,7 +27,7 @@ export const projects = [
     shortDescription:
       "O TooLe vem com o intuito de ajudar os estudantes, atraves de um app para ser usado como caderno de anotações",
     capa: capa,
-    image: imagem,
+    image: tooleImage,
     techUsadas: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg",

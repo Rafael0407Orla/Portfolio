@@ -14,10 +14,10 @@ const ProjectCard = ({ project }) => {
   return (
     <div
       onClick={() => handleNavigate(project.projectId)}
-      className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105"
+      className="bg-white rounded-lg w-auto  max-w-[400px] shadow-lg overflow-hidden transform transition duration-500 hover:scale-105"
     >
       <img
-        src={project.capa}
+        src={project.image}
         alt={project.name}
         className="h-48 w-full object-cover"
       />
@@ -28,16 +28,6 @@ const ProjectCard = ({ project }) => {
         <Typography variant="p" align="left" color={colors.brandText}>
           {project.shortDescription}
         </Typography>
-        <div className="flex space-x-2 mt-4">
-          {project.techUsadas.map((tech, index) => (
-            <span
-              key={index}
-              className="px-3 py-1 bg-indigo-100 text-indigo-600 text-xs font-semibold rounded-full"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
       </div>
     </div>
   );
