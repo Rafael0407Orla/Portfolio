@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { IoMdMenu } from "react-icons/io";
-
+import { NavLink } from "react-router-dom";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,30 +18,24 @@ const Header = () => {
           R.P.
         </p>
         <nav className="hidden md:flex space-x-6">
-          <a
-            href="#"
+          <NavLink
+            to={""}
             className=" text-brandText text-[20px] hover:text-brandPrimary"
           >
             Home
-          </a>
-          <a
-            href="#"
+          </NavLink>
+          <NavLink
+            href="sobre"
             className=" text-brandText text-[20px] hover:text-brandPrimary"
           >
-            About
-          </a>
-          <a
-            href="#"
+            Sobre mim
+          </NavLink>
+          <NavLink
+            href="contato"
             className=" text-brandText text-[20px] hover:text-brandPrimary"
           >
-            Services
-          </a>
-          <a
-            href="#"
-            className=" text-brandText text-[20px] hover:text-brandPrimary"
-          >
-            Contact
-          </a>
+            Contato
+          </NavLink>
         </nav>
         <button
           className="md:hidden block focus:outline-none"
@@ -58,18 +52,18 @@ const Header = () => {
           className="fixed left-0 right-0
  md:hidden bg-brandPrimary text-white space-y- p-4"
         >
-          <a href="#" className="block">
+          <NavLink href="#" className="block">
             Home
-          </a>
-          <a href="#" className="block">
+          </NavLink>
+          <NavLink href="#" className="block">
             About
-          </a>
-          <a href="#" className="block">
+          </NavLink>
+          <NavLink href="#" className="block">
             Services
-          </a>
-          <a href="#" className="block">
+          </NavLink>
+          <NavLink href="#" className="block">
             Contact
-          </a>
+          </NavLink>
         </nav>
       )}
     </header>

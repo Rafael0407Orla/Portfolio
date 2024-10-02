@@ -7,14 +7,16 @@ import { colors } from "../../utils/colors";
 import StatusChip from "../../Components/chipStatusProject";
 import ContactForm from "../../Components/Forms";
 const ProjectDetailPage = () => {
-  const { projectID } = useParams();
+  const { id } = useParams();
 
-  const project = projects.find((proj) => proj.projectId === parseInt(projectID));
+  const project = projects.find((proj) => proj.projectId == parseInt(id));
 
   if (!project) {
     return (
       <div className="text-center flex flex-col justify-center align-middle mt-8 h-svh">
-        <Typography variant="h1" color={colors.brandPrimary} >Project not found</Typography>
+        <Typography variant="h1" color={colors.brandPrimary}>
+          Project not found
+        </Typography>
       </div>
     );
   }
