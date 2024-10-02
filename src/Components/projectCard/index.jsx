@@ -2,9 +2,20 @@
 import React from "react";
 import Typography from "../Typograph";
 import { colors } from "../../utils/colors";
+import { useNavigate } from "react-router-dom";
 const ProjectCard = ({ project }) => {
+  const navigate = useNavigate();
+
+  function handleNavigate(id) {
+    console.log(id);
+    navigate(`projetos/${id}`);
+  }
+
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+    <div
+      onClick={() => handleNavigate(project.projectId)}
+      className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105"
+    >
       <img
         src={project.capa}
         alt={project.name}
