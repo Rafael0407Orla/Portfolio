@@ -54,7 +54,10 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <nav className="md:hidden bg-brandPrimary text-white space-y- p-4">
+        <nav
+          className="fixed left-0 right-0
+ md:hidden bg-brandPrimary text-white space-y- p-4"
+        >
           <a href="#" className="block">
             Home
           </a>
