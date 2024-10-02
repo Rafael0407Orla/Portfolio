@@ -10,7 +10,7 @@ import jsIcon from "../../assets/jsIcon.svg";
 import reactIcon from "../../assets/reactIcon.svg";
 import reactNativeIcon from "../../assets/reactNativeIcon.png";
 import framerIcon from "../../assets/framerIcon.png";
-import ffIcon from "../../assets/ffIcon.png";
+import ffIcon from "../../assets/flutterflowIcon.png";
 import wpIcon from "../../assets/wpIcon.png";
 import webFlowIcon from "../../assets/webFlowIcon.png";
 import ContactForm from "../../Components/Forms/index.jsx";

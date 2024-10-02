@@ -13,7 +13,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-6">
+    <div className="md:max-w-[70%] mx-auto">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label className="block text-sm font-medium text-brandText">
