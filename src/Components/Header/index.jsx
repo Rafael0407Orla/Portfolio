@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="">
-      <div className="container mx-auto flex justify-between items-center p-4">
+      <div className=" mx-auto flex justify-between items-center p-4">
         <p className="text-[50px] md:text-[60px] font-bold bg-gradient-to-r from-brandPrimary  to-brandSecondary inline-block  text-transparent bg-clip-text">
           R.P.
         </p>
@@ -25,7 +25,7 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink
-            href="sobre"
+            to="sobre"
             className=" text-brandText text-[20px] hover:text-brandPrimary"
           >
             Sobre mim
