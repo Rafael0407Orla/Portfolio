@@ -13,15 +13,6 @@ const Footer = () => {
           <a href="#" className="hover:text-gray-800">
             About
           </a>
-          <a href="#" className="hover:text-gray-800">
-            Technologies
-          </a>
-          <a href="#" className="hover:text-gray-800">
-            Projects
-          </a>
-          <a href="#" className="hover:text-gray-800">
-            Contact
-          </a>
         </div>
 
         <div className="text-center mb-4 md:mb-0 sm:flex gap-4">

@@ -14,9 +14,11 @@ const Header = () => {
   return (
     <header className="">
       <div className=" mx-auto flex justify-between items-center p-4">
-        <p className="text-[50px] md:text-[60px] font-bold bg-gradient-to-r from-brandPrimary  to-brandSecondary inline-block  text-transparent bg-clip-text">
-          R.P.
-        </p>
+        <NavLink to="/">
+          <p className="text-[50px] md:text-[60px] font-bold bg-gradient-to-r from-brandPrimary  to-brandSecondary inline-block  text-transparent bg-clip-text">
+            R.P.
+          </p>
+        </NavLink>
         <nav className="hidden md:flex space-x-6">
           <NavLink
             to={""}
@@ -29,12 +31,6 @@ const Header = () => {
             className=" text-brandText text-[20px] hover:text-brandPrimary"
           >
             Sobre mim
-          </NavLink>
-          <NavLink
-            href="contato"
-            className=" text-brandText text-[20px] hover:text-brandPrimary"
-          >
-            Contato
           </NavLink>
         </nav>
         <button
@@ -52,17 +48,11 @@ const Header = () => {
           className="fixed left-0 right-0
  md:hidden bg-brandPrimary text-white space-y- p-4"
         >
-          <NavLink href="#" className="block">
+          <NavLink to="" className="block">
             Home
           </NavLink>
-          <NavLink href="#" className="block">
+          <NavLink to="sobre" className="block">
             About
-          </NavLink>
-          <NavLink href="#" className="block">
-            Services
-          </NavLink>
-          <NavLink href="#" className="block">
-            Contact
           </NavLink>
         </nav>
       )}

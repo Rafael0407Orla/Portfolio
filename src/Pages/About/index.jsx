@@ -7,12 +7,12 @@ function About() {
     {
       title: "Jovem Aprendiz",
       company: "Orla Tech",
-      dateRange: "Out 2021 - Dec 2021",
+      dateRange: "Out 2022 - Dec 2022",
     },
     {
       title: "Estagiário",
       company: "Orla Tech",
-      dateRange: "Dec 2021 - Junho 2024",
+      dateRange: "Dec 2022 - Junho 2024",
     },
     {
       title: "Desenvolvedor Júnior",
@@ -25,12 +25,12 @@ function About() {
     {
       title: "FIAP School",
       company: "FIAP",
-      dateRange: "Aug 2015 - Dec 2020",
+      dateRange: "Aug 2021 - Dec 2023",
     },
     {
       title: "FIAP Engenharia de Software",
       company: "FIAP",
-      dateRange: "Aug 2015 - Dec 2020",
+      dateRange: "Aug 2024 - Atualmente",
     },
   ];
 
@@ -39,24 +39,49 @@ function About() {
       <Typography variant="h1" align="left" color={colors.brandTertirary}>
         Um pouco sobre mim!
       </Typography>
-      <Typography variant="p" align="left" color={colors.brandText}>
-        The Generator App is an online tool that helps you to export ready-made
-        templates ready to work as your future website. It helps you to combine
-        slides, panels and other components and export it as a set of static
-        files: HTML/CSS/JS.
+      <Typography
+        variant="p"
+        align="left"
+        addClassName="mt-4 mb-12"
+        color={colors.brandText}
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec
+        tincidunt ante. Nulla facilisis turpis quis lacus convallis dapibus.
+        Morbi non metus ante. Curabitur sodales lorem a odio molestie lacinia.
+        Cras in pellentesque diam, vitae tempor justo. Donec vulputate, turpis
+        id facilisis volutpat, leo justo laoreet leo, a iaculis ligula lectus
+        quis velit. Praesent venenatis pellentesque mi et tincidunt. Nulla
+        consectetur risus quis lectus dictum, at fringilla tortor
       </Typography>
-      <Typography variant="h2" color={colors.brandTertirary} align="left">
+      <Typography
+        variant="h2"
+        color={colors.brandTertirary}
+        addClassName="mb-8"
+        align="left"
+      >
         Experiências de trabalho
       </Typography>
       <Timeline experiences={experiences} />
-      <Typography variant="h2" color={colors.brandTertirary} align="left">
+      <Typography
+        variant="h2"
+        color={colors.brandTertirary}
+        addClassName="mb-8 mt-16"
+        align="left"
+      >
         Educação
       </Typography>
       <Timeline experiences={school} type="school" />
-      <Typography variant="h2" color={colors.brandTertirary} align="left">
+      <Typography
+        variant="h2"
+        color={colors.brandTertirary}
+        addClassName="mb-8 mt-16"
+        align="left"
+      >
         Quer bater um papo?
       </Typography>
-      <ContactForm />
+      <div className="w-auto flex justify-start">
+        <ContactForm />
+      </div>
     </main>
   );
 }
