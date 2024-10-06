@@ -6,4 +6,5 @@ export const colors = {
   brandBlack: "#000000",
   brandSucess: "#D7FFE0",
   brandProcess: "#FFE5D7",
+  brandWhite: "#ffffff",
 };

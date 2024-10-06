@@ -1,4 +1,6 @@
 import React from "react";
+import Typography from "../Typograph";
+import { colors } from "../../utils/colors";
 
 const StatusChip = ({ status }) => {
   const statusStyles = {
@@ -15,7 +17,9 @@ const StatusChip = ({ status }) => {
     <div
       className={`px-4 py-2 rounded-full text-[14px] w-fit bg- ${statusStyles[status]}`}
     >
-      {statusText[status]}
+      <Typography variant="detail" color={colors.brandWhite}>
+        {statusText[status]}
+      </Typography>
     </div>
   );
 };

@@ -3,8 +3,8 @@ import Typography from "../../Components/Typograph";
 import { colors } from "../../utils/colors";
 import { projects } from "../../../data.js";
 import ProjectCard from "../../Components/projectCard/index.jsx";
-// Importação correta dos ícones
 import htmlIcon from "../../assets/htmlIcon.svg";
+import eu from "../../assets/eu.png";
 import cssIcon from "../../assets/cssIcon.svg";
 import jsIcon from "../../assets/jsIcon.svg";
 import reactIcon from "../../assets/reactIcon.svg";
@@ -41,21 +41,17 @@ function Home() {
         </div>
 
         <div className="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full border-4 border-gradient-to-r from-purple-400 via-pink-500 to-blue-500 overflow-hidden">
-          <img
-            src="https://example.com/path-to-your-image.jpg"
-            alt="Pavan MG"
-            className="w-full h-full object-cover rounded-full"
-          />
+          <img src={eu} className="w-full h-full object-cover rounded-full" />
         </div>
       </section>
 
       <section className="">
         <div className="text-center mb-8">
           <Typography variant="h2" color={colors.brandTertirary}>
-            My Tech Stack
+            Meu Tech Stack
           </Typography>
-          <Typography variant="h3" addClassName="text-gray-600">
-            Technologies I've been working with recently
+          <Typography variant="h3" addClassName="text-gray-600 mt-6 mb-4">
+            Tecnologias que trabalhei recentemente
           </Typography>
         </div>
 
@@ -76,7 +72,11 @@ function Home() {
           <Typography variant="h2" color={colors.brandTertirary}>
             Projetos
           </Typography>
-          <Typography variant="p" color={colors.brandText}>
+          <Typography
+            variant="p"
+            color={colors.brandText}
+            addClassName="mt-6 mb-4"
+          >
             Alguns dos meus projetos:
           </Typography>
 
@@ -87,7 +87,9 @@ function Home() {
           </div>
         </div>
       </section>
-      <ContactForm />
+      <div className="w-auto flex  justify-center">
+        <ContactForm />
+      </div>
     </main>
   );
 }

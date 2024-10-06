@@ -29,9 +29,12 @@ const Typography = ({
     p: `text-base md:text-lg lg:text-xl font-regular ${
       alignmentClasses[align] || alignmentClasses.center
     }`,
+    detail: `text-[12px] font-400 ${
+      alignmentClasses[align] || alignmentClasses.center
+    }`,
   };
 
-  const Tag = variant;
+  const Tag = variant != "detail" ? variant : "p";
   const variantClass = typographyVariants[variant] || typographyVariants.p;
 
   return (

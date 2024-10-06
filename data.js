@@ -1,8 +1,6 @@
-import capa from "../Portfolio/src/assets/htmlIcon.svg";
-import imagem from "../Portfolio/src/assets/cssIcon.svg";
-import vamooTela from "../Portfolio/src/assets/vamooImage.png";
-import tooleImage from "../Portfolio/src/assets/tooleImage.png";
-import ff from "../Portfolio/src/assets/flutterflowIcon.png";
+import vamooTela from "/src/assets/vamooImage.png";
+import tooleImage from "/src/assets/tooleImage.png";
+import ff from "/src/assets/flutterflowIcon.png";
 export const projects = [
   {
     projectId: 1,
@@ -10,7 +8,6 @@ export const projects = [
     status: "finalizado",
     shortDescription:
       "O vamoo é um app para jogadores de tênis conseguirem criar e gerenciar seus torneio de maineira rápida e prática",
-    capa: capa,
     image: vamooTela,
     techUsadas: [
       ff,
@@ -18,7 +15,7 @@ export const projects = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
     ],
     description:
-      "O aplicativo vamoo foi incialmente criado para ajudar jogadores de tênis a criar e gerenciar seus torneios, quando tive a ideia queria testar ferramentas nova ferramentas e optei por usar o Flutterflow uma plataforma low-code para criação de apps que permite adicionar muita lógica, tanto que crie vários elementos usando flutter puro. O mais legal é a integração que o flutterflow oferece com o firebase, graças a isso, usando o firestore e firebase functions criei todo um banco de dados NoSQL e uma série de APIs para que o usuário no app consiga interagir com o banco",
+      "O aplicativo Vamoo foi inicialmente criado para ajudar tenistas a organizar e gerenciar seus torneios. Quando tive a ideia, aproveitei a oportunidade para testar novas ferramentas e escolhi o Flutterflow, uma plataforma low-code para desenvolvimento de apps, que permite incluir bastante lógica. Tanto que consegui criar vários elementos usando Flutter puro. Um dos destaques do Flutterflow é sua integração com o Firebase. Graças a isso, utilizando Firestore e Firebase Functions, construí um banco de dados NoSQL completo e diversas APIs que permitem aos usuários do app interagir com o banco de dados de forma eficiente.",
   },
   {
     projectId: 2,
@@ -26,7 +23,6 @@ export const projects = [
     status: "andamento",
     shortDescription:
       "O TooLe vem com o intuito de ajudar os estudantes, atraves de um app para ser usado como caderno de anotações",
-    capa: capa,
     image: tooleImage,
     techUsadas: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
@@ -34,6 +30,6 @@ export const projects = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
     ],
     description:
-      "O aplicativo TooLe nasceu como uma ideia para a feira de start-up da Fiap School e o mesmo tem como foco ajudar e incentivar os estudantes, com uma interface voltada para ser usada como um caderno (requer o uso de caneta digital) ele proporciona uma série de ferramentas para tornar o aprendizado mais imersivo e interativo, como: objetos 3D, gerador de fonts personalizadas e muito mais!",
+      "O aplicativo TooLe nasceu como uma ideia para a feira de startups da Fiap School, com o objetivo de ajudar e incentivar estudantes. Ele se destaca por oferecer uma interface pensada para funcionar como um caderno digital (requer o uso de caneta digital), proporcionando uma experiência de aprendizado mais imersiva e interativa. O TooLe conta com diversas ferramentas, como objetos 3D, gerador de fontes personalizadas, entre outros recursos que tornam o processo de estudo mais dinâmico e envolvente.",
   },
 ];
