@@ -17,7 +17,7 @@ const Footer = () => {
 
         <div className="text-center mb-4 md:mb-0 sm:flex gap-4">
           <p className="text-sm">+91 12345 09876</p>
-          <p className="text-sm">info@example.com</p>
+          <p className="text-sm">rafael@gmail.com</p>
         </div>
 
         <div className="flex space-x-4">

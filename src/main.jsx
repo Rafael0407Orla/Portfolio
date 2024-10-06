@@ -6,16 +6,22 @@ import "./index.css";
 import Home from "./Pages/Home/index.jsx";
 import About from "./Pages/About/index.jsx";
 import ProjectDetailPage from "./Pages/DetailsProject/index.jsx";
+import ErrorPage from "./Pages/ErrorPage/index.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
       { path: "sobre", element: <About /> },
       { path: "projetos/:id", element: <ProjectDetailPage /> },
       { path: "contato", element: <About /> },
+      {
+        path: "*",
+        element: <ErrorPage />,
+      },
     ],
   },
 ]);

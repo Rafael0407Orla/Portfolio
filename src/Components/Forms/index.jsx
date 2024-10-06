@@ -15,6 +15,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsFormsSubmit(true);
+    setFormData({ fullName: "", email: "", message: "" });
     console.log("Form submitted:", formData);
     setTimeout(() => {
       setIsFormsSubmit(false);
