@@ -1,18 +1,18 @@
 // Footer.jsx
 import React from "react";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
-
+import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-gray-100 py-6">
       <div className="md:p-4 container mx-auto flex flex-col md:flex-row justify-between items-center text-gray-600">
         <div className=" flex space-x-4 mb-4 md:mb-0 flex-wrap justify-center">
-          <a href="#" className="hover:text-gray-800">
+          <NavLink to="" className="block">
             Home
-          </a>
-          <a href="#" className="hover:text-gray-800">
+          </NavLink>
+          <NavLink to="sobre" className="block">
             About
-          </a>
+          </NavLink>
         </div>
 
         <div className="text-center mb-4 md:mb-0 sm:flex gap-4">
