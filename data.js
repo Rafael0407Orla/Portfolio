@@ -1,6 +1,6 @@
-import vamooTela from "../Portfolio/src/assets/vamooImage.png";
-import tooleImage from "../Portfolio/src/assets/tooleImage.png";
-import ff from "../Portfolio/src/assets/flutterflowIcon.png";
+import vamooTela from "/src/assets/vamooImage.png";
+import tooleImage from "/src/assets/tooleImage.png";
+import ff from "/src/assets/flutterflowIcon.png";
 export const projects = [
   {
     projectId: 1,
